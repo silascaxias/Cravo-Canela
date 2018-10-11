@@ -1,0 +1,139 @@
+.login-error {
+    display: block;
+    padding:8px;
+    color: #ff867f;
+    font-size: 11px;
+    border-radius: 3px;
+}
+
+.displayIB{
+    display:inline-block;
+}
+.w33{
+    width: 33%;
+}
+.container-main{
+    display:flex;
+    justify-content: space-around;
+}
+
+.card-count{
+    background-color: white;
+    -webkit-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.1) ;
+    -moz-box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.1) ;
+    box-shadow: 1px 3px 5px 1px rgba(0,0,0,0.1) ;
+    z-index: 100;
+    padding: 0;
+    padding: 15px 10px 30px 10px;
+    margin-bottom: 10px;
+    width : 24vw;
+    display: inline-block;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.card-count.info {
+    background-color: #00c0ef;
+}
+
+.card-count.success{
+    background-color: #00a65a;
+}
+
+.card-count.danger{
+    background-color: #dd4b39;
+}
+
+.card-count >div{
+    display:flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    height: 5vw;
+    position:relative;
+}
+
+.card-count > div >h2{
+    z-index: 2;
+    text-align: left;
+    color:white;
+    font-size: 3.5em;
+    font-weight: bold;
+}
+
+.card-count > div >h3{
+    z-index: 2;
+    text-align: left;
+    color:white;
+    
+}
+
+.card-count > div > i{
+    font-size: 5em;
+    position: absolute;
+    z-index: 0;
+    opacity: 0.4;
+    color:white;
+    right:0;
+    transition: 0.6s;
+}
+
+.card-count:hover > div > i{
+    font-size: 5.5em;
+}
+
+.bolder{
+    font-weight: bold;
+}
+
+
+.update-card {
+    min-height: 70px;
+    border-radius: 9px;
+    box-shadow: 0 1px 2px 1px #ccc;
+    padding: 5px 4px;
+}
+
+.update-card > header > .title {
+    color: #f13c32;
+    font-size: 16px;
+}
+
+.update-card > header >.subtitle {
+    color: #f13c32;
+    font-size: 12px;
+}
+
+.update-card > header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed #f13c32;
+}
+
+.update-card > section {
+    margin-top: 10px;
+}
+
+.update-card > section > span {
+    font-size: 12px;
+}
+
+section.bg-home {
+    height: calc(100vh - 50px);
+    display: flex;
+    align-items: center;
+    background-size: cover;
+}
+.welcome-home {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 50px;
+    border-radius: 5px; 
+}
+.welcome-home-buttons {
+    width: 50%;
+    float: left;
+}

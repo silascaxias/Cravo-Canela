@@ -1,0 +1,217 @@
+body{
+	background-color: #EEEEE0!important;
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+ul{
+	list-style-type: none;
+}
+ul li > a{
+	color: #856b39;
+	font-style: italic;
+	font-family: "Monotype";
+	font-size: 17px;
+}
+ul li > a:hover{
+	font-weight: bold;
+	color: #856B39;
+	transition: 3s;
+}
+label{
+	color:white;
+	font-style: italic;
+	font-family: "Monotype";
+	font-size: 20px;
+}
+p{
+	color: black;
+	font-style: italic;
+	font-family: "Monotype";
+	font-size: 20px;
+}
+.row{
+	margin-right: 0px!important;
+	margin-left: 0px!important;
+
+}
+.logo{
+	height:35px; 
+	width:120px;
+	margin-top: 13px;
+	padding-left: 10px;
+
+}
+.menu{
+    background-color: #dcbc7d!important;
+    padding-bottom: 70px;
+}
+.carousel-font{
+	color:#856b39;
+	font-style: italic;
+	font-family: "Monotype";
+}
+.buscar-list{
+	padding: 250px 0 300px;
+	background: url(/Cravo&Canela/views/img/casal.jpg)no-repeat 50% 50%;
+	overflow: hidden;
+}
+.contato{
+	padding: 100px 0 100px;
+	background: url(/Cravo&Canela/views/img/casal.jpg)no-repeat 40% 40%;
+	overflow: hidden;
+	margin: 0px;
+	border: 0px;
+}
+.input_text{
+	width: 360px!important;
+    height: 50px!important;
+    border-radius: 4px!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    border: 1px solid #fff!important!;
+    margin-bottom: 2%!important;
+}
+.input_date{
+	width: 180px!important;
+    height: 50px!important;
+    border-radius: 4px!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    border: 1px solid #fff!important!;
+    margin-bottom: 2%!important;
+}
+.input_name{
+	width: 280px!important;
+    height: 50px!important;
+    border-radius: 4px!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    border: 1px solid #fff!important!;
+    margin-bottom: 2%!important;
+}
+.input_email{
+	width: 280px!important;
+    height: 50px!important;
+    border-radius: 4px!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    border: 1px solid #fff!important!;
+    margin-bottom: 2%!important;
+}
+.input_password{
+	width: 180px!important;
+    height: 50px!important;
+    border-radius: 4px!important;
+    background-color: transparent!important;
+    color: #fff!important;
+    border: 1px solid #fff!important!;
+    margin-bottom: 2%!important;
+}
+::-webkit-input-placeholder {
+   	color: #fff;
+	font-style: italic;
+
+}
+.criar{
+	font-style: italic;
+	font-family: "Monotype";
+	color: #FFFAFA;
+}
+.btn-primary{
+	margin-top: 5px;
+}
+.btn-warning{
+	color: white!important;
+	background-color: #dcbc7d!important;
+	border-color: #dcbc7d!important;
+}
+.btn-warning button:hover{
+	font-weight: bold;
+	color: #856B39;
+	transition: 3s;
+}
+.form_senha{
+	padding-top: 100px;
+}
+.linha_vertical{
+	height: 80px;/*Altura da linha*/
+  	border-left: 1px solid;/* Adiciona borda esquerda na div como ser fosse uma linh#a.*/
+	color: #856b39;
+	background-color: transparent;
+	margin-left: 35px;
+}
+.form_cadastro{
+	padding: 150px 0 150px;
+	background: url(/Cravo&Canela/views/img/decoracao.jpg)no-repeat 50% 50%;
+	overflow: hidden;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.rodape{
+	color: black;
+	font-style: italic;
+	font-family: "Monotype";
+	font-size: 17px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background-color: #dcbc7d!important;
+	width: 100%;
+	margin-top: 25px;
+}
+.end{
+	margin-top: 10px;
+	margin-left: 70px;
+	margin-right: 20px; 
+}
+.red{
+	margin-top: 10px;
+	
+}
+.barra{
+	margin-left: 120px;
+	padding-left: 330px!important;
+	background-color: #dcbc7d!important;
+}
+.barra > p{
+	font-size: 25px;
+}
+.titulo{
+	color:black;
+	font-style: italic;
+	font-family: "Monotype";
+	font-size: 40px;
+}
+.profile-sidebar-card {
+  padding: 20px 0 100px 0;
+  background: #dcbc7d;
+}
+.profile-userpic-card img {
+  float: none;
+  margin: 0 auto;
+  width: 50%;
+  height: 50%;
+  -webkit-border-radius: 50% !important;
+  -moz-border-radius: 50% !important;
+  border-radius: 50% !important;
+} 
+.profile-usertitle-card {
+  text-align: center;
+  margin-top: 20px;
+}
+.navbar{
+	margin-bottom: 0px!important;
+}
+@media screen and (min-width: 768px) {
+	.linha_vertical{
+  	/* Adiciona borda esquerda na div como ser fosse uma linh#a. */
+	width: 10px;
+	}
+	.rodape{
+		padding: 0px!important;
+	}
+	.barra{
+		margin-left: 0px;
+		padding-left: 0px;
+	}
+
+}
