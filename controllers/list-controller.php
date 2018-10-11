@@ -55,20 +55,16 @@ class ListController extends MainController {
         $id = $parameters[0];
         
         $lista = ListaModel::where("couple_id ='".$id."'");
-        $this->model->lista = ListaModel::where("id_tb_lista='".$lista[0]['id_tb_lista']."'");
+
         $produtos = ListaProdutoModel::where("id_lista ='".$lista[0]['id_tb_lista']."'");
-        $produtos2 = array();
-        $produtos2['imagem'] = array();
-        $idImagem = array();
+        $auxProd = array();
+
         foreach ($produtos as $idProduto){
-            array_push($produtos2, ProductModel::where("id_product ='".$idProduto['id_produto']."'"));
-            array_push($produtos2['imagem'], $this->fill_pictures($idProduto['id_produto']));
+            $aux1 = ProductModel::where("id_product ='".$idProduto['id_produto']."'");
+            $aux2 = $this->fill_pictures($idProduto['id_produto']);
+            array_push($auxProd, array("Produto" => $aux1, "Imagem" => $aux2));
         }
-        $this->model->produto = $produtos2;
-        $this->model->imagemProduto = $idImagem;
-        echo '<pre>';
-        print_r($this->model->produto);
-        echo '</pre>';
+        $this->model->produto = $auxProd;
         $this->load_page('listas/listProduto.php');
     }
 

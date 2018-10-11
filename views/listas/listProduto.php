@@ -6,13 +6,22 @@
 					<p>Noivos - Ariane Citelli & Thomaz Brancati</p>
 				</nav>
 					<div class="col-md-3">
-						<?php foreach($this->model->produto as $prod) { ?>
+						<?php foreach($this->model->produto as $key => $prod) { ?>
 							<div class="card-deck">
 						  		<div class="card">
 						    		<div class="card-body">
 						    			
-						      			<p class="card-text"><?=$prod[0]['descript_product']?></p>
-						      			<center><button type="button" class="btn btn-warning"><?=$prod[0]['price_product']?></button></center>	
+						      			<center><p class="card-text"><?=$prod['Produto'][0]['descript_product']?></p></center>
+						      			
+                         				<div class="card-img"  style="width: 12rem;float: left">
+			                            	<figure>
+			                                    <img src="<?=$prod['Imagem'][0]['src']?>" alt="<=$prod['Imagem'][0]['Titulo']?>" class="card-img-top rounded">
+			                            	</figure>
+			                            	<figcaption>
+			                            		<center><button type="button" class="btn btn-warning"><?=$prod['Produto'][0]['price_product']?></button></center>
+			                            	</figcaption>
+                        				</div>
+                        		
 						    		</div>
 						    	</div>
 						  	</div>

@@ -21,10 +21,16 @@ class ClienteController extends MainController {
     public function select(){
         $data = $_POST;
         $nome = $data['nome_noivos'];
-        $cliente = ClienteModel::where("couple_nome ='".$nome."'");
+        $cliente = ClienteModel::where("couple_nome like '%".$nome."%'");
         $this->model->cliente = $cliente;
-        $this->model->idCliente = $cliente[0]['couple_id'];
-        $this->model->imagem = $this->fill_pictures($this->model->idCliente);
+        $this->model->idCliente = array();
+        $this->model->imagem = array();
+
+        if($cliente){
+            $this->model->idCliente = $cliente[0]['couple_id'];
+            $this->model->imagem = $this->fill_pictures($this->model->idCliente);
+        }
+
         $this->load_page('listas/listCasal.php');
     }
     
