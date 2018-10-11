@@ -48,11 +48,15 @@
                         <a class="nav-link" href="/Cravo&Canela/views/contato/index.php">Contato</a>
                     </li>
                     <li>
-                     <?php if($this->logged_in):?> 
+                     <?php if($this->logged_in){?> 
                         <a href="?sair=sim">
                             <a href="<?=HOME_URI?>/login/exit" class="button danger">Sair</a> 
                         </a>                
-                    <?php endif; ?>
+                    <?php }else{ ?>
+                        <a href="?sair=sim">
+                            <a href="<?=HOME_URI?>/login" class="nav-link">Área do Admin</a> 
+                        </a>
+                    <?php }    ?>
                     </li>
                 </ul>
             </div>

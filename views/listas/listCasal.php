@@ -12,19 +12,24 @@
                         </center>
                     </div>
                 <?php } ?>
+
                 
                 <hr>
                 <?php foreach($this->model->cliente as $nome) { ?>
-                <div class="profile-usertitle-card">
-                    <div class="profile-usertitle-name">
-                        <?=$nome['couple_nome']?>
-                        <?=$nome['couple_id']?>
+                <div class="card">
+                    <div class="card-body">
+                        <div class="profile-usertitle-card">
+                            <div class="profile-usertitle-name">                               
+                               <center><h4 class="card-title"><?=$nome['couple_nome']?></h4></center>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <hr>
-                <center>
+                    <center>
                 <a href="<?=HOME_URI?>/list/listProduct/<?=$nome['couple_id']?>" class="button back new" style="margin-bottom: 10px;">Ver Lista</a>
                 </center>
+                </div>
+
+                <hr>
                 <?php } ?>
             </div>
         </div>

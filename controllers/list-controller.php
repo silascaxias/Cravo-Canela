@@ -30,23 +30,7 @@ class ListController extends MainController {
             $this->load_page('login/index.php');
         }
     }
-    /*public function listProduct(){
-        $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
-        if (!$parameters) {
-            $this->throw_404();
-        }
-        $id = $parameters[0];
-        $produtos = ListaModel::where("couple_id ='".$id."'");
-        $idLista = $produtos[0]['id_tb_lista'];
-
-        $lista = ListaProdutoModel:: where("id_lista ='".$idLista."'");
-        
-        foreach ($lista as $litVar){
-            $this->model->produto = ProductModel:: where("id_product ='".$litVar['id_produto']."'");
-            c
-        }
-            $this->goto_page('listas/listProduto.php');
-    }*/
+    
     public function listProduct(){
         $parameters = (func_num_args() >= 1 ) ? func_get_arg(0) : array();
         if (!$parameters) {
